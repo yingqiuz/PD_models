@@ -2,12 +2,12 @@
 # coding: utf-8
 
 # In[1]:
-
+from __future__ import division
 import numpy as np
 from scipy.stats import norm
 import copy
 import matplotlib.pyplot as plt
-from __future__ import division
+
 
 
 # In[2]:
