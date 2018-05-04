@@ -24,7 +24,7 @@ for t in range(T_spread):
     ref_model.misfolded_alpha_syn_spread_edge()
     ref_model.misfolded_alpha_syn_spread_region()
 print(ref_model.mis)   
-
+```
 
 Class `SIR_model` simulates the system based on the differential equations...
 ```python
@@ -48,3 +48,4 @@ for t in range(T_spread):
     ref_model.misfolded_alpha_syn_spread_edge()
     ref_model.misfolded_alpha_syn_spread_region()
 print(ref_model.mis)
+```
