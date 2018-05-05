@@ -2,7 +2,7 @@
 Python based PD_models to predict alpha-syn spread in Parkinson's Disease
 
 # Usage
-Class `agent_based_model` simulates the interactions and mobility patterns of alpha-syn individually
+Class `agent_based_model` simulates the interactions and mobility patterns of alpha-syn individually (slow)
 ```python
 import numpy as np
 from PD_models import agent_based_model
@@ -26,7 +26,7 @@ for t in range(T_spread):
 print(ref_model.mis)   
 ```
 
-Class `SIR_model` simulates the system based on the differential equations...
+Class `SIR_model` simulates the system based on the differential equations... See [SIR_stimulator_Euler](https://github.com/yingqiuz/SIR_stimulator_Euler) for a matlab implementation
 ```python
 import numpy as np
 from PD_models import SIR_model
