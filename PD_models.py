@@ -16,19 +16,19 @@ class agent_based_model:
         misfolded_alpha_syn_spread_edge: mobility patterns of normal/misfolded alpha-syn in edges
         misfolded_alpha_syn_spread_edge_discrete: a discrete version....
         record_to_history: record the misfolded/normal alpha-syn population at each time step
-    usage:
-        ref_model = agent_based_model(sconn_len=sconn_len, sconn_den=sconn_den, snca=snca, gba=gba, roi_size=roi_size, fconn=fconn, fcscale=0)
-        T_total = 10000
-        for t in range(T_total):
-            ref_model.record_to_history()
-            ref_model.normal_alpha_syn_growth_edge()
-            ref_model.normal_alpha_syn_growth_region()
-        ref_model.inject_mis()
-        for t in range(T_total):
-            ref_model.record_to_history()
-            ref_model.misfolded_alpha_syn_spread_region()
-            ref_model.misfolded_alpha_syn_spread_edge()
-        print(ref_model.mis)"""
+    
+    parameters:
+        v: speed (default 1)
+        N_regions: total number of ROIs
+        dt: default 0.01
+        sconn_len: structural connectivity (length)
+        sconn_den: structural connectivity (strength)
+        snca: SNCA expressions
+        gba: GBA expressions
+        roi_size: Region size
+        fconn: functional connectivity
+        fcscale: weights of functional connectivity
+	"""
     
     # constructor
     def __init__(self, v=1 , N_regions=42, dt=0.01, sconn_len=None, sconn_den=None, snca=None, gba=None, roi_size=None, fconn=None, fcscale=None):
