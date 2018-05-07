@@ -1,8 +1,6 @@
 from __future__ import division, print_function
 import numpy as np
 from scipy.stats import norm
-import copy
-import matplotlib.pyplot as plt
 
 class agent_based_model:
     
