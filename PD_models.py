@@ -1,4 +1,4 @@
-from __future__ import division
+from __future__ import division, print_function
 import numpy as np
 from scipy.stats import norm
 import copy
@@ -285,7 +285,7 @@ class SIR_model:
         
         # number of regions
         self.N_regions = N_regions
-        
+        self.dt = dt
         # store number of normal and misfolded proteins in regions
         self.nor, self.mis = [np.zeros((N_regions, ))] * 2
         self.nor_history, self.mis_history = [np.empty((0, N_regions))] * 2
