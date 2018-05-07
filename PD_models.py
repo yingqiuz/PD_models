@@ -2,7 +2,7 @@ from __future__ import division, print_function
 import numpy as np
 from scipy.stats import norm
 
-class agent_based_model:
+class SIR_agent_based_model:
     
     """
     functions: 
